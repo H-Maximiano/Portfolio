@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Hedear, Container, DivImg, ImgDePerfil, DivCard, ImgIcon,Divv,ImgDeProjetos } from "./styled"
+import { Hedear, Container, DivImg, ImgDePerfil, DivCard, ImgIcon,Divv,ImgDeProjetos,DivCard2 } from "./styled"
 import {FotoDePerfil,IconReact,HTML5,css,CSharp,docker,git,Cardapio,Cadastro,netflix} from './fuctions/FotosDeProjetos'
 import { Typewriter } from './fuctions/Typewriter'
 
@@ -93,7 +93,7 @@ function App() {
             <Typewriter frases={titulos} />
           </Divv>
     
-          <DivCard>
+          <DivCard2>
             <h1><span>H</span>abilidades</h1>
             <div>
               
@@ -103,7 +103,7 @@ function App() {
                 ))}
               </ul>
             </div>
-          </DivCard>
+          </DivCard2>
         </div>
       </Container>
     </>

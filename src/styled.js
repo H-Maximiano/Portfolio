@@ -42,103 +42,97 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     
-
+    /* No PC fica como você fez. No celular, empilha os blocos debaixo */
     div{
         display: flex;
         gap: 20px;
         justify-content: center;
         align-items: center;
-        
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 `
 
 export const DivCard = styled.div`
- display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
   align-items: center;
 
   width: 100%;
-  max-width: 280px; /* Alterado para max-width para segurança no mobile */
+  max-width: 280px;
   height: 200px;
   padding: 10px;
   margin: 10px 20px 0px 20px;
   border-radius: 10px;
   font-size: 12px;
 
-  /* Sombra com efeito Neon Roxo */
   box-shadow: 
     0px 0px 5px #6d009b,
     0px 0px 10px #6d009b,
     0px 0px 15px #6d009b;
-
-    div{
-        display: flex;
-        flex-direction: column;
-         align-items: center;
-    }
-  
-  ul{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-   }
-  
-    h1 {
-    font-family: 'Rubik Distressed', display;
-        span{
-            color: red;
-        }
-    }
-  
 `
 
 export const DivImg = styled.div`
     display: flex;
-   margin: 10px 0px 10px 10px;
+    margin: 10px 0px 10px 10px;
     
-   span{
-    color: red;
-   }
+    span{
+        color: red;
+    }
 
-   div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
+    /* No celular, joga a foto para cima e o texto para baixo centralizado */
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+    }
 
-   p{
-       max-width: 280px; /* Proteção para o texto não estourar */
-   }
-    
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p{
+        max-width: 280px;
+        word-wrap: break-word;
+    }
 `
 
 export const ImgDePerfil = styled.img`
     width: 220px;
     height: 220px;
-   margin: 0px 20px 20px 10px;
-   border-radius: 30px;
+    margin: 0px 20px 20px 10px;
+    border-radius: 30px;
    
- box-shadow: 
-  0px 0px 5px #6d009b,
-  0px 0px 20px #6d009b,
-  0px 0px 20px #6d009b;
+    box-shadow: 
+        0px 0px 5px #6d009b,
+        0px 0px 20px #6d009b,
+        0px 0px 20px #6d009b;
+
+    @media (max-width: 768px) {
+        margin: 0px 0px 20px 0px;
+    }
 `
 
 export const Divv = styled.div`
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
 
-  width: 260px;
-  height: 180px; /* Corrigido o px que faltava */
-  padding: 10px;
-  margin: 10px 20px 0px 20px;
-  border-radius: 10px;
-  font-size: 12px;
+    width: 260px;
+    height: 180px;
+    padding: 10px;
+    margin: 10px 20px 0px 20px;
+    border-radius: 10px;
+    font-size: 12px;
 `
 
 export const ImgIcon = styled.img`
@@ -152,17 +146,56 @@ export const ImgIcon = styled.img`
         0px 0px 5px #6d009b,
         0px 0px 20px #6d009b,
         0px 0px 20px #6d009b;
-        
 `
 
 export const ImgDeProjetos = styled.img`
     width: 280px;
     height: 280px;
-   margin: 0px 20px 20px 10px;
-   border-radius: 30px;
+    margin: 0px 20px 20px 10px;
+    border-radius: 30px;
    
- box-shadow: 
-  0px 0px 5px #6d009b,
-  0px 0px 20px #6d009b,
-  0px 0px 20px #6d009b;
+    box-shadow: 
+        0px 0px 5px #6d009b,
+        0px 0px 20px #6d009b,
+        0px 0px 20px #6d009b;
+`
+
+export const DivCard2 = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+
+    width: 100%;
+    max-width: 190px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px 20px 0px 20px;
+    border-radius: 10px;
+    font-size: 12px;
+
+    box-shadow: 
+        0px 0px 5px #6d009b,
+        0px 0px 10px #6d009b,
+        0px 0px 15px #6d009b;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+  
+    h1 {
+        font-family: 'Rubik Distressed', display;
+        span{
+            color: red;
+        }
+    }
 `
