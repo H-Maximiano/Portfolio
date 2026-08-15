@@ -47,7 +47,7 @@ export const Container = styled.div`
         display: flex;
         gap: 20px;
         justify-content: center;
-        align-items: center
+        align-items: center;
         
     }
 `
@@ -59,7 +59,8 @@ export const DivCard = styled.div`
   gap: 10px;
   align-items: center;
 
-  width: 280px;
+  width: 100%;
+  max-width: 280px; /* Alterado para max-width para segurança no mobile */
   height: 200px;
   padding: 10px;
   margin: 10px 20px 0px 20px;
@@ -76,17 +77,13 @@ export const DivCard = styled.div`
         display: flex;
         flex-direction: column;
          align-items: center;
-        
-       
-        
     }
   
   ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-   
-  }
+   }
   
     h1 {
     font-family: 'Rubik Distressed', display;
@@ -95,7 +92,7 @@ export const DivCard = styled.div`
         }
     }
   
-`;
+`
 
 export const DivImg = styled.div`
     display: flex;
@@ -109,14 +106,10 @@ export const DivImg = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
    }
 
-   p{width:280px}
-
-   h1{
-    
+   p{
+       max-width: 280px; /* Proteção para o texto não estourar */
    }
     
 `
@@ -141,17 +134,13 @@ export const Divv = styled.div`
   align-items: center;
 
   width: 260px;
-  height: 180;
+  height: 180px; /* Corrigido o px que faltava */
   padding: 10px;
   margin: 10px 20px 0px 20px;
   border-radius: 10px;
   font-size: 12px;
-
-  
-  
-
-
 `
+
 export const ImgIcon = styled.img`
     width: 80px;
     height: 80px;
@@ -164,7 +153,7 @@ export const ImgIcon = styled.img`
         0px 0px 20px #6d009b,
         0px 0px 20px #6d009b;
         
-    `
+`
 
 export const ImgDeProjetos = styled.img`
     width: 280px;
@@ -177,4 +166,3 @@ export const ImgDeProjetos = styled.img`
   0px 0px 20px #6d009b,
   0px 0px 20px #6d009b;
 `
-
