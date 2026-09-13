@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Hedear, Container, DivImg, ImgDePerfil, DivCard, ImgIcon,Divv,ImgDeProjetos,DivCard2 } from "./styled"
+import { Hedear, Container, DivImg, ImgDePerfil, ImgIcon,Divv,ImgDeProjetos,DivCard2 } from "./styled"
 import {FotoDePerfil,IconReact,HTML5,css,CSharp,docker,git,Cardapio,Cadastro,netflix} from './fuctions/FotosDeProjetos'
 import { Typewriter } from './fuctions/Typewriter'
 
@@ -58,7 +58,11 @@ function App() {
         <h2><span>H</span>udson</h2>
         <div>
           <button>Home</button>
-          <button>Projetos</button>
+          <button
+          onClick={() => window.location.href = 'https://main.d115xhugfsw31r.amplifyapp.com'}
+  className="btn-projeto"
+
+          >Projetos</button>
         </div>
       </Hedear>
 
