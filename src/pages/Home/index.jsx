@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { Hedear, Container, DivImg, ImgDePerfil, ImgIcon,Divv,ImgDeProjetos,DivCard2 } from "./styled"
-import {FotoDePerfil,IconReact,HTML5,css,CSharp,docker,git,Cardapio,Cadastro,netflix} from './fuctions/FotosDeProjetos'
-import { Typewriter } from './fuctions/Typewriter'
-
+import { Hedear, Container, DivImg, ImgDePerfil, ImgIcon, Divv, ImgDeProjetos, DivCard2 } from "./styled"
+import { FotoDePerfil, IconReact, HTML5, css, CSharp, docker, git, Cardapio, Cadastro, netflix } from './FotosDeProjetos'
+import { Typewriter } from './Typewriter'
+import { Link } from 'react-router'
 
 const fotos = [IconReact, HTML5, css, CSharp, docker, git]
 const fotosDeProjetos = [Cardapio, Cadastro, netflix]
@@ -57,12 +57,12 @@ function App() {
       <Hedear>
         <h2><span>H</span>udson</h2>
         <div>
-          <button>Home</button>
+          
+          <Link to="/projects">
           <button
-          onClick={() => window.location.href = 'https://main.d115xhugfsw31r.amplifyapp.com'}
-  className="btn-projeto"
-
           >Projetos</button>
+          </Link>
+        
         </div>
       </Hedear>
 

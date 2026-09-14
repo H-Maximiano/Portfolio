@@ -15,15 +15,31 @@ export const Hedear = styled.header`
             0px 0px 5px #6d009b,
             0px 0px 10px #6d009b,
             0px 0px 10px #6d009b;
-    button{
-         
-        color: red;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-       
-    }
+    button {
+  color: #ef0014; 
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+
+  
+  &:hover {
+    color: #ffffff;
+    background-color: rgba(130, 87, 229, 0.2); 
+  }
+
+  
+  &:active {
+    color: #ff334b;
+    background-color: rgba(130, 87, 229, 0.4);
+    transform: scale(0.95); 
+  }
+}
     
     }
 
@@ -41,8 +57,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    /* No PC fica como você fez. No celular, empilha os blocos debaixo */
+   
     div{
         display: flex;
         gap: 20px;
